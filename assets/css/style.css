@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #23272A;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-image: url(../images/Header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 95px 0;
+}
+
+header h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 56px;
+    font-weight: 400;
+    color: #ffffff;
+    max-width: 350px;
+    text-align: center;
+}
+
+header p {
+    color: #ffffff;
+    text-align: center;
+    max-width: 757px;
+    font-weight: 400;
+    line-height: 21.79px;
+}
+
+header > div {
+    display: flex;
+    gap: 16px;
+}
+
+header div a {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border-radius: 28px;
+    padding: 11px 24px;
+    text-align: center;
+}
+
+.b-black {
+    background-color: #23272A;
+}
+
+.b-white p {
+    color: #23272A;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 40px;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+section h2 {
+    max-width: 329px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 54.47px;
+}
+
+section p {
+    max-width: 348px;
+    font-weight: 400;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.white2 {
+    background-color: #F6F6F6;
+}
+
+.white2 img {
+    order: 2;
+}
+
+.section2 {
+    flex-direction: column;
+}
+
+.section2 h2 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    max-width: 608px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.section2 p {
+    max-width: 810px;
+    text-align: center;
+}
+
+footer {
+    background-color: #23272A;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    width: 230px;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 1024px) {
+    section {
+        flex-direction: column;
+    }
+
+    section div {
+        align-items: center;
+        justify-content: center;
+    }
+
+    section h2 {
+        max-width: 608px;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+    section p {
+        max-width: 810px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        align-items: inherit;
+        justify-content: inherit;
+        padding: 70px 24px;
+        background-position: -300px;
+    }
+    
+    header h1 {
+        font-size: 32px;
+        max-width: 278px;
+        text-align: start;
+    }
+    
+    header p {
+        text-align: inherit;
+        max-width: 757px;
+    }
+    
+    header > div {
+        flex-direction: column;
+    }
+    
+    header div a {
+        width: 100%;
+        padding: 16px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .b-black {
+        padding: 16px 0;
+    }
+    
+    section {
+        padding: 40px 25px;
+        gap: 27px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    section div {
+        gap: 27px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    section h2 {
+        max-width: 100%;
+        font-size: 24px;
+        line-height: 32.68px;
+        text-align: start;
+    }
+    
+    section p {
+        max-width: 100%;
+        text-align: start;
+    }
+    
+    .white2 img {
+        order: 0;
+    }
+    
+    .section2 {
+        flex-direction: column;
+    }
+
+    .section2 img {
+        order: 2;
+    }
+    
+    .section2 h2 {
+        max-width: 100%;
+        text-align: start;
+        line-height: 32px;
+        font-size: 32px;
+    }
+
+    .section2 p {
+        text-align: start;
+    }
+}
